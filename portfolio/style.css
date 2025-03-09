@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #040809;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.left h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.navContent a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navContent a:hover {
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+}
+
+.navBar:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto;
+    padding: 20px 16%;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.aboutMe {
+    background-color: #1a1a1a; 
+    padding: 50px 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); 
+    max-width: 900px;
+    margin: 50px auto; 
+}
+
+.aboutMeContent {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 20px;
+    color: #ddd; 
+}
+
+.aboutMeContent h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f8c24d; 
+    margin-bottom: 15px;
+}
+
+.aboutMeContent p {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: justify; 
+}
+
+.skillContent{
+    border: 2px solid white;
+    max-width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.skillContent h1{
+    color: #B4ACBC;
+}
+
+.skillContent p{
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 15%; 
+}
+
+.projects{
+    background-color: #b4acbc49;
+    line-height: 1.8;
+    margin-top: 45px;
+    max-width: 900px;
+    height: 580px;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.projects h1{
+    padding-top: 10px;
+    text-align: center;
+    color: #F8C24D;
+}
+
+.projectContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.content{
+    width: 40%;
+    margin: 20px;
+}
+
+.content p{
+    padding-left: 20px;
+}
+
+.content h3{
+    color: #F8C24D;
+    text-align: center;
+}
+
+.content a{
+    text-decoration: none;  
+}
+
+.content button{
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: #F8C24D;
+    color: black !important;
+}
+
+.footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #f8c24d;
+}
+
+.footer h2 {
+    color: #F8C24D;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #f8c24d;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: cyan;
+}
